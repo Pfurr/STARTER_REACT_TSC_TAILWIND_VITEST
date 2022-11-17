@@ -17,18 +17,18 @@ root.render(
 
 //* config msw browser enable!
 //! COMMENT ON THE CODE ABOVE TO AVOID MOCKING API REST!
-if (process.env.NODE_ENV === 'development') {
-  import('../mocks/browser')
-    .then(({ worker }) => {
-      // LINK MANAGE WARNING IN CONSOLE -> BROWSER: https://mswjs.io/docs/api/setup-worker/start#onunhandledrequest
-      worker.start({
-        onUnhandledRequest: 'bypass' //? Performs an unhandled request as-is.
-      })
-    })
-    .then(() => {
-      root.render(<App />)
-    })
-} else {
-  root.render(<App />)
-}
+// if (process.env.NODE_ENV === 'development') {
+//   import('../mocks/browser')
+//     .then(({ worker }) => {
+//       // LINK MANAGE WARNING IN CONSOLE -> BROWSER: https://mswjs.io/docs/api/setup-worker/start#onunhandledrequest
+//       worker.start({
+//         onUnhandledRequest: 'bypass' //? Performs an unhandled request as-is.
+//       })
+//     })
+//     .then(() => {
+//       root.render(<App />)
+//     })
+// } else {
+//   root.render(<App />)
+// }
 //! END

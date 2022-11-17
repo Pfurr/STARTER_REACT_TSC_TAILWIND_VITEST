@@ -1,9 +1,9 @@
-import { ReactElement, useEffect, useState } from 'react'
+import { Children, ReactElement, useEffect, useState } from 'react'
 
 export const API_URL = 'https://jsonplaceholder.typicode.com/users' as string
 
 // types
-import { AppState } from '../../utils/ts/app_state'
+import { AppState } from '../types.d'
 
 function Demo(): ReactElement {
   const [users, setUsers] = useState<AppState['users_state']>([])

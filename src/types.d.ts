@@ -1,4 +1,4 @@
-// types data - component
+//* data -> src/components/Demo.tsx
 export interface Data {
   id: number
   name: string
@@ -27,4 +27,10 @@ interface Address {
 interface Geo {
   lat: string
   lng: string
+}
+
+//* state -> src/components/Demo.tsx
+export interface AppState {
+  users_state: Array<Data>
+  error_state: string | null
 }
