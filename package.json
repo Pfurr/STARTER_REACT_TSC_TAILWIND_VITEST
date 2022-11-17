@@ -1,0 +1,62 @@
+{
+  "name": "vite-react-typescript-tailwind-starter",
+  "version": "0.0.2",
+  "license": "MIT",
+  "msw": {
+    "workerDirectory": ""
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview --port 3000",
+    "clean": "rimraf node_modules yarn.lock package-lock.json dist",
+    "lint": "eslint . --ext .ts,.tsx,.js",
+    "prepare": "husky install",
+    "rtl": "vitest",
+    "rtl:coverage": "vitest run --coverage",
+    "rtl:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@heroicons/react": "^2.0.13",
+    "@tailwindcss/forms": "^0.5.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.2",
+    "@types/node": "18",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "@vitejs/plugin-react": "^2.2.0",
+    "@vitest/coverage-c8": "^0.25.2",
+    "@vitest/ui": "latest",
+    "autoprefixer": "^10.4.13",
+    "cross-fetch": "^3.1.5",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest-dom": "^4.0.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-watch": "^8.0.0",
+    "husky": "^8.0.2",
+    "jest": "^29.3.1",
+    "jsdom": "^20.0.2",
+    "msw": "^0.48.2",
+    "postcss": "^8.4.19",
+    "prettier": "2.7.1",
+    "tailwindcss": "^3.2.4",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.8.4",
+    "vite": "^3.2.3",
+    "vitest": "^0.25.2"
+  }
+}

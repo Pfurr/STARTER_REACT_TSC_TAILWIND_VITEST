@@ -1,0 +1,21 @@
+Questo starter utilizza lo stack di implementazione seguente:
+
+- yarn
+- react > versione 18
+- typescript 
+- vite
+- vitest -> ui jest + react testing library
+- msw 
+- tailwind per la gestione degli css - style
+- ect...
+
+E' possibile integrare opzionalmente DAISY CSS - integrazione a tailwind:
+
+- https://daisyui.com/docs/install/
+
+
+Note:
+
+Rimuovere temporaneamente dai nostri test MSW:
+
+- recarsi su src/main.tsx e SEMPLICEMENTE deselezionare tutto il blocco di codice relativo al  worker.start() di Msw. Se Msw è disabilitato non apparirà nella console del browser il relativo avviso: [MSW] Mocking enabled.
